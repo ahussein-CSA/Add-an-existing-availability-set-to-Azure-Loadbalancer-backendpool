@@ -1,5 +1,27 @@
-# Add an existing availability set to Azure Loadbalancer backendpool - TCP/HTTP
-Created by Ahmed Hussein
+ 
+#########################################################################################
+
+ Script: Add existing availability set VMs into newly created Azure Public Load Balancer - Azure
+ Author: Ahmed Hussein - Microsoft 
+ Date: August 2018
+ Version: 1.0
+ References: https://docs.microsoft.com/en-us/azure/load-balancer/quickstart-create-standard-load-balancer-powershell
+ GitHub: https://github.com/ahussein-CSA/Add-an-existing-availability-set-to-Azure-Loadbalancer-backendpool
+
+ THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+ IN NO EVENT SHALL MICROSOFT AND/OR ITS RESPECTIVE SUPPLIERS BE
+ LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY
+ DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE
+ OF THIS CODE OR INFORMATION.
+
+
+#########################################################################################
 
 Current repository includes two powershell scripts
 
@@ -38,4 +60,25 @@ Script one provides the following:
 
 
 # Variables within the script
+
+$rgName ='<name of the existing resource group>'
+$avs = '<Name of the existing availability set>'
+$location ='<Location where the LB will be deployed - must exist same region where the availability set is>'
+$pIPname ='<Name of the public IP>'
+$fename = '<Name of the FrontEndPool>'
+$bepoolname ='<name of the BackendPool>'
+$probename = '<Name of the HealthProbe>'
+$rulename = '<Name of the rule>'
+$lbname = '<Name of the load balancer>'
+$protocol = '<TCP/HTTP>'
+$port ='<port>'
+$feport = '<FrontEnd port>'
+$beport = '<Backend port>'
+$intinseconds = '<intervals in Seconds>'
+$probcount ='<unhealthy probes>'
+$lbsku = 'Basic' # initialize  as Basic  
+$publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
+$allocation='Dynamic' # initialize as Dynamic
+$RequestPath='<request path>' # only needed when the port being used is HTTP
+
 
