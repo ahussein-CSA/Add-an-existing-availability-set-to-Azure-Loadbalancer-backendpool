@@ -1,3 +1,3 @@
-# Add availability set to Azure Loadbalancer backendpool 
-# Created by Ahmed Hussein
-# The current script 
+# Add an existing availability set to Azure Loadbalancer backendpool 
+Created by Ahmed Hussein
+
