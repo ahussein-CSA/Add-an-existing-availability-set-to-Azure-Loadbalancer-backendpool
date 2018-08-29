@@ -33,7 +33,7 @@
 
 Current repositories includes two branches (powershell scripts)
 
-1. [newloadbalancer_existingavailabilityset.ps1] (https://github.com/ahussein-CSA/Add-an-existing-availability-set-to-Azure-Loadbalancer-backendpool/tree/ahussein-CSA-ScriptOne)
+1. [newloadbalancer_existingavailabilityset.ps1](https://github.com/ahussein-CSA/Add-an-existing-availability-set-to-Azure-Loadbalancer-backendpool/tree/ahussein-CSA-ScriptOne)
     
     1.1 Standard SKU
     1.2 Basic SKU
