@@ -37,7 +37,7 @@ $feport = '<FrontEnd port>'
 $beport = '<Backend port>'
 $intinseconds = '<intervals in Seconds>'
 $probcount ='<unhealthy probes>'
-$lbsku = 'Basic' # initialize  as Basic  
+$lbsku = 'Standard' # initialize  as Basic  
 $publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
 $allocation='Dynamic' # initialize as Dynamic
 $RequestPath='<request path>' # only needed when the port being used is HTTP
@@ -65,13 +65,13 @@ $feip = New-AzureRmLoadBalancerFrontendIpConfig -Name $fename -PublicIpAddress $
 $bepool = New-AzureRmLoadBalancerBackendAddressPoolConfig -Name $bepoolname
 
 If ($port -eq 'HTTP')  {
-# Creates a load balancer probe on specific port
+# Creates a load balancer probe on specific port for HTTP port
 $probe = New-AzureRmLoadBalancerProbeConfig -Name $probename -Protocol $protocol -Port $port `
 -RequestPath $RequestPath -IntervalInSeconds $intinseconds -ProbeCount $probcount
 }
 
 else {
-# Creates a load balancer probe on specific port
+# Creates a load balancer probe on specific port for TCP
 $probe = New-AzureRmLoadBalancerProbeConfig -Name $probename -Protocol $protocol -Port $port `
 -IntervalInSeconds $intinseconds -ProbeCount $probcount
 
