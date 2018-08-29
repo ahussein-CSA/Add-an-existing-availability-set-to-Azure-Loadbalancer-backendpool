@@ -34,7 +34,7 @@ Script one provides the following:
    
 7. Loop through existing provided availability set - assign its VMs as part of the backendpool for the newly created load balancer.
 
-    Please note: The script assumes that the VM has only one Nic interface , so it will assign only the private ip as the target ip for the VM.
+    Please note: The script assumes that the VM has only one Nic interface , so it will assign only the private ip as the target ip for the VM. Furture updates will loop through all the nics and assign the selected ip.
 
 
 # Variables within the script
