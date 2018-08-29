@@ -64,5 +64,30 @@ Script one provides the following:
     Please note: The script assumes that the VM has only one Nic interface , so it will assign only the private ip as the target ip for the VM. Furture updates will loop through all the nics and assign the selected ip.
 
 
-### Variables within the script
+### Variables within script one
+
+```
+
+$rgName ='<name of the existing resource group>'
+$avs = '<Name of the existing availability set>'
+$location ='<Location where the LB will be deployed - must exist same region where the availability set is>'
+$pIPname ='<Name of the public IP>'
+$fename = '<Name of the FrontEndPool>'
+$bepoolname ='<name of the BackendPool>'
+$probename = '<Name of the HealthProbe>'
+$rulename = '<Name of the rule>'
+$lbname = '<Name of the load balancer>'
+$protocol = '<TCP/HTTP>'
+$port ='<port>'
+$feport = '<FrontEnd port>'
+$beport = '<Backend port>'
+$intinseconds = '<intervals in Seconds>'
+$probcount ='<unhealthy probes>'
+$lbsku = 'Basic' # initialize  as Basic  
+$publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
+$allocation='Dynamic' # initialize as Dynamic
+$RequestPath='<request path>' # only needed when the port being used is HTTP
+
+
+```
 
