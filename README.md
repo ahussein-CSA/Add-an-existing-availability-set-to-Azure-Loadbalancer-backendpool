@@ -2,10 +2,15 @@
 #########################################################################################
 
  Script: Add existing availability set VMs into newly created Azure Public Load Balancer - Azure
+
  Author: Ahmed Hussein - Microsoft 
+ 
  Date: August 2018
+ 
  Version: 1.0
+ 
  References: https://docs.microsoft.com/en-us/azure/load-balancer/quickstart-create-standard-load-balancer-powershell
+ 
  GitHub: https://github.com/ahussein-CSA/Add-an-existing-availability-set-to-Azure-Loadbalancer-backendpool
 
  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
@@ -62,23 +67,42 @@ Script one provides the following:
 # Variables within the script
 
 $rgName ='<name of the existing resource group>'
+ 
 $avs = '<Name of the existing availability set>'
+ 
 $location ='<Location where the LB will be deployed - must exist same region where the availability set is>'
+ 
 $pIPname ='<Name of the public IP>'
+ 
 $fename = '<Name of the FrontEndPool>'
+ 
 $bepoolname ='<name of the BackendPool>'
+ 
 $probename = '<Name of the HealthProbe>'
+ 
 $rulename = '<Name of the rule>'
+ 
 $lbname = '<Name of the load balancer>'
-$protocol = '<TCP/HTTP>'
+ 
+$protocol = '<TCP or HTTP>'
+
 $port ='<port>'
+ 
 $feport = '<FrontEnd port>'
+ 
 $beport = '<Backend port>'
+ 
 $intinseconds = '<intervals in Seconds>'
+ 
 $probcount ='<unhealthy probes>'
+ 
 $lbsku = 'Basic' # initialize  as Basic  
+
 $publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
+
 $allocation='Dynamic' # initialize as Dynamic
+
 $RequestPath='<request path>' # only needed when the port being used is HTTP
+ 
 
 
