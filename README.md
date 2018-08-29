@@ -77,7 +77,7 @@ $probcount ='<unhealthy probes>'
 $lbsku = 'Basic' # initialize  as Basic  
 $publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
 $allocation='Dynamic' # initialize as Dynamic
-$RequestPath='<request path>' # only needed when the port being used is HTTP
+
 
 
 ```
