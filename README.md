@@ -1,7 +1,7 @@
  
 #########################################################################################
 
- Script: Add existing availability set VMs into newly created Azure Public Load Balancer - Azure
+ Script: Add existing availability set VMs to newly created Azure Public Load Balancer BackendPool - Azure
 
  Author: Ahmed Hussein - Microsoft 
  
