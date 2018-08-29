@@ -74,7 +74,7 @@ $feport = '<FrontEnd port>'
 $beport = '<Backend port>'
 $intinseconds = '<intervals in Seconds>'
 $probcount ='<unhealthy probes>'
-$lbsku = 'Basic' # initialize  as Basic  
+$lbsku = 'Standard' # defaut is Standard 
 $publicIpsku = 'Basic' # initial as Basic  ---> No need to change this one as it relies on lbsku
 $allocation='Dynamic' # initialize as Dynamic
 
