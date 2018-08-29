@@ -34,6 +34,8 @@ Script one provides the following:
    
 7. Loop through existing provided availability set - assign its VMs as part of the backendpool for the newly created load balancer.
 
+    Please note: it will assign only the first private ip as the target ip for the VM.
+
 
 # Variables within the script
 
