@@ -1,7 +1,7 @@
  
 #########################################################################################
 
- Script: Add existing availability set VMs to newly created Azure Public Load Balancer BackendPool - Azure
+ Script One: Add existing availability set VMs to newly created Azure Public Load Balancer BackendPool - Azure
 
  Author: Ahmed Hussein - Microsoft 
  
@@ -9,9 +9,8 @@
  
  Version: 1.0
  
- References: https://docs.microsoft.com/en-us/azure/load-balancer/quickstart-create-standard-load-balancer-powershell
+ [References](https://docs.microsoft.com/en-us/azure/load-balancer/quickstart-create-standard-load-balancer-powershell)
  
- GitHub: https://github.com/ahussein-CSA/Add-an-existing-availability-set-to-Azure-Loadbalancer-backendpool
 
  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
  ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -28,14 +27,6 @@
 
 #########################################################################################
 
-Current repository includes two powershell scripts
-
-1. newloadbalancer_existingavailabilityset.ps1
-    
-    1.1 Standard SKU
-    1.2 Basic SKU
-    
-2. existingloadbalancer_existingavailabilityset.ps1
 
 ### What does the powershell script "newloadbalancer_existingavailabilityset.ps1" do ? 
 
