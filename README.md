@@ -37,7 +37,7 @@ Current repository includes two powershell scripts
     
 2. existingloadbalancer_existingavailabilityset.ps1
 
-# What does the powershell script "newloadbalancer_existingavailabilityset.ps1" do ? 
+### What does the powershell script "newloadbalancer_existingavailabilityset.ps1" do ? 
 
 Script one provides the following:
 
@@ -64,5 +64,5 @@ Script one provides the following:
     Please note: The script assumes that the VM has only one Nic interface , so it will assign only the private ip as the target ip for the VM. Furture updates will loop through all the nics and assign the selected ip.
 
 
-# Variables within the script
+### Variables within the script
 
