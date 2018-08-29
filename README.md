@@ -28,7 +28,7 @@
 #########################################################################################
 
 
-### What does the powershell script "newloadbalancer_existingavailabilityset.ps1" do ? 
+### What does the powershell script "newloadbalancer_existingavailabilityset_Simple.ps1" do ? 
 
 Script one provides the following:
 
